@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Emm's HTML Template
+        </title>
+
+        <!--Meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="">
+        
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="index.css">
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!--For navigation-->
+        <script src="navigationScript.js"></script>
+    </head>
+
+    <body>
+        <!--Top navigation - add hover effects later-->
+        <div class="navigation">
+            <!--Logo-->
+            <a href="index.html"><img src="logo.svg" alt="logo" id="navigationLogo"></a>
+            <!--Hamburger Menu-->
+            <button class="nav-toggle" aria-hidden="true" aria-label="menu" onclick="navFunction(); return false">
+                <!--Hamburger menu lines-->
+                <div class="topLine"></div><div class="midLine"></div><div class="bottomLine"></div>
+            </button>
+            <nav class="nav" aria-hidden="true" style="transition: max-height 284ms ease 0s;">
+                <!--Navigational Links-->
+                <ul class="nav-links">
+                    <!--Collaspable links when mobile sized-->
+                    <div class="collapsable">
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="">Link 4</a>
+                    </li>
+                    <li>
+                        <a href="">Link 5</a>
+                    </li>
+                </div>
+                <!--Optional Book now button - Outside of collapsable menu-->
+                    <li class="bookingButton">
+                        <button>Book now</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Page content - needs to be under the sticky nav-->
+        <div class="pageContent">
+            
+        </div>
+        <footer>
+            <!--Logo-->
+            <img src="logo.svg" alt="Logo" id="footerLogo">
+            <!--Footer Links-->
+            <ul class="footer-links">
+                <li>
+                    <a href="">Link 1</a>
+                </li>
+                <li>
+                    <a href="">Link 2</a>
+                </li>
+                <li>
+                    <a href="">Link 3</a>
+                </li>
+                <li>
+                    <a href="">Link 4</a>
+                </li>
+                <li>
+                    <a href="">Link 5</a>
+                </li>
+            </ul>
+            <!--line--><hr style="width: 85%;">
+            <!--Copyright and Facebook link and Icon-->
+            <p>2022 &#169; Put Footer copyright here</p>
+        </footer>
+    </body>
+</html>

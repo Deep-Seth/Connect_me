@@ -1,0 +1,284 @@
+/*Links*/
+
+/*Mobile sizing*/
+@media screen and (max-width: 768px) {
+    
+    .navigation {
+        height: 90px;
+    }
+
+    #navigationLogo {
+        height: 50px;
+        padding: 20px;
+        position: absolute;
+    }
+
+    .nav-toggle {
+        display: block;
+        height: 20px;
+        padding: 12px 16px;
+    }
+
+    .collapsable{
+        display: none;
+    }
+
+    .open{
+        display: block !important;
+        position: absolute;
+        margin-top: 90px;
+        background-color: yellow;
+    }
+
+    .open li {
+        float: none;  
+        color: #252525;  
+        padding: 12px 16px;  
+        text-decoration: none;  
+        display: block;  
+        text-align: left;
+    }
+
+    .bookingButton {
+        display: block;
+    }
+
+    .bookingButton button {
+        height: 90px;
+    }
+}
+
+/*Tablet sizing*/
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    
+    .navigation {
+        height: 90px;
+    }
+
+    #navigationLogo {
+        height: 50px;
+        padding: 20px;
+        position: absolute;
+    }
+
+    .nav-toggle {
+        display: block;
+        height: 20px;
+        padding: 12px 16px;
+        margin-right: 10px;
+    }
+
+    .nav-links {
+        transition: all 1s; 
+    }
+
+    .collapsable{
+        display: none;
+    }
+
+    .open{
+        display: block !important;
+        position: absolute;
+        margin-top: 90px;
+        background-color: yellow;
+    }
+
+    .open li {
+        float: none; 
+        color: #252525;  
+        padding: 12px 16px;  
+        text-decoration: none;  
+        display: block;  
+        text-align: left;
+    }
+
+    .bookingButton button {
+        height: 90px;
+    }
+}
+
+/*Laptop sizing*/
+@media screen and (min-width: 1025px) and (max-width: 1401px) {
+    
+    .navigation {
+        height: 90px;
+    }
+
+    #navigationLogo {
+        height: 50px;
+        padding: 20px;
+        position: absolute;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-links {    
+        margin-right: 50px;
+    }
+
+    .nav-links li {
+        padding: 16px;
+        display: inline-block;
+    }
+
+    .collapsable{
+        display: inline;
+    }
+
+    .bookingButton button {    
+        border-radius: 7px;
+    }
+}
+
+/*Desktop sizing*/
+@media screen and (min-width: 1401px) {
+    
+    .navigation {
+        height: 90px;
+    }
+
+    #navigationLogo {
+        height: 40px;
+        padding: 20px 50px;
+        position: absolute;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-links {    
+        margin-right: 50px;
+    }
+
+    .nav-links li {
+        padding: 20px;
+        display: inline-block;
+    }
+
+    .collapsable{
+        display: inline;
+    }
+
+    .bookingButton button {
+        border-radius: 7px;
+    }
+}
+
+/*All sizes*/
+html {
+
+}
+
+body {
+    margin: 0;
+    min-height: 2000px;
+    width: 100%;
+}
+
+.navigation {
+    min-width: 100%; 
+    background-color: #f5f5f5;
+    min-width: 100%;
+    margin-top: 0;
+    position: fixed;
+    z-index: 0;
+}
+
+.nav-collapsable {
+    width: 100%; 
+    position: absolute; 
+    float: right;
+    z-index: 0;
+}
+
+.nav-links {
+    position: relative;
+    float: right;
+    margin-top: 0;
+}
+
+.nav-links li {
+    list-style: none;
+    /*padding: 20px;*/
+    /*margin-right:20px;*/
+    right: 0;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #252525;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    float: right;
+    z-index: 1;
+    position: relative;
+    border: none;
+    height: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.bookingButton button{
+    background-color: #ac142b;
+    padding: 12px 16px;
+    border: 0px;
+    color: #f5f5f5;
+    cursor: pointer;
+    position: relative;
+}
+
+footer {
+    background-color: #4e4e4e;
+    bottom: 0;
+}
+
+.footer-links {
+    margin: 0 0 0 5%;
+}
+
+.footer-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+}
+
+.footer-links li a {
+    color: #f5f5f5;
+    text-decoration: none; 
+}
+
+.topLine, .midLine, .bottomLine {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 0;
+    position: relative;
+  }
+   
+.rightCross{      
+    transform: translate(0, 11px) rotate(-45deg) !important;  
+}
+  
+.hidden {
+    opacity: 0;
+}
+  
+.leftCross {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.pageContent {
+    z-index: -1;
+    padding-top: 90px;
+    position: relative;
+}
