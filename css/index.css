@@ -282,3 +282,21 @@ footer {
     padding-top: 90px;
     position: relative;
 }
+.jobs{
+    z-index:1;
+    position: relative;
+    width: 100px;
+}
+.skills{
+    z-index:1;
+    position: relative;
+    width:400px;
+    background:green;
+}
+#profile_1{
+    margin-top: 30 px;
+    padding-left: 60px;
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
