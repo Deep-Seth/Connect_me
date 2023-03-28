@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>
-            Emm's HTML Template
+            ConnectMe
         </title>
 
         <!--Meta tags-->
@@ -10,17 +10,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!--Favicon-->
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="">
         
         <!--Stylesheet-->
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <!--For navigation-->
-        <script src="navigationScript.js"></script>
-        <!--Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="../navigationScript.js"></script>
     </head>
 
     <body>
@@ -29,6 +28,7 @@
             <!--Logo-->
             <a href="index.html"><img src="logo.svg" alt="logo" id="navigationLogo"></a>
             <!--Hamburger Menu-->
+            <input type="text" placeholder="Search..." class="searchBar">
             <button class="nav-toggle" aria-hidden="true" aria-label="menu" onclick="navFunction(); return false">
                 <!--Hamburger menu lines-->
                 <div class="topLine"></div><div class="midLine"></div><div class="bottomLine"></div>
@@ -55,18 +55,16 @@
                     </li>
                 </div>
                 <!--Optional Book now button - Outside of collapsable menu-->
-                    <li class="bookingButton">
-                        <button>Book now</button>
+                    <li class="homeButton">
+                        <button></button>
                     </li>
                 </ul>
             </nav>
         </div>
 
         <!--Page content - needs to be under the sticky nav-->
-        <div class="pageContent" style="height: 450px; width:1000px;">
-             <div class ="Jobs" style="color:green"><img  src="images/stock1.jfif" id= "profile_1"><br><button type="button" class="btn btn-link" style="margin-left:150px">Job matches</button>
-             </div>
-             <div class="Skills">
+        <div class="pageContent">
+            
         </div>
         <footer>
             <!--Logo-->
@@ -91,7 +89,7 @@
             </ul>
             <!--line--><hr style="width: 85%;">
             <!--Copyright and Facebook link and Icon-->
-            <p>2022 &#169; Put Footer copyright here</p>
+            <p>2023 &#169; Put Footer copyright here</p>
         </footer>
     </body>
 </html>
