@@ -45,7 +45,6 @@
     .homeButton button {
         margin: 20px;
     }
-
 }
 
 /*Tablet sizing*/
@@ -290,6 +289,16 @@ footer {
 
 .pageContent {
     z-index: -1;
-    padding-top: 90px;
+    padding-top: 100px;
     position: relative;
+}
+
+#editCoverImg {
+    position: relative;
+    height: 100px;
+}
+
+
+#editCoverImg input{
+    z-index: 1;
 }
