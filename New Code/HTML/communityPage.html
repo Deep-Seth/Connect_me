@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        ConnectMe
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../JavaScript/navigationScripts.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="homePage.html"><img src="../Assets/Images/logo.png" alt="ConnectMe" id="navigationLogo"></a>
+        <button class="nav-toggle" aria-hidden="true" aria-label="menu" onclick="navFunction(); return false">
+            <div class="topLine"></div>
+            <div class="midLine"></div>
+            <div class="bottomLine"></div>
+        </button>
+        <nav class="nav" aria-hidden="true" style="transition: max-height 284ms ease 0s;">
+            <ul class="nav-links">
+                <div class="collapsable">
+                    <li>
+                        <a href="homePage.html">Home</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="jobPage.html">Jobs</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="communityPage.html">Community</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="blog.html">Blog</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>-->
+                </div>
+                <!--Add JavaScript to see if person is logged in, if not, maybe add class "no user" and if they are logged in, add class "user" which finds user image-->
+                <li class="profileButton">
+                    <button></button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="pageContent">
+        <div style="height: 88vh;">
+            <h1>Community Hub</h1>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerFlexbox">
+            <div>
+                <img src="../Assets/Images/whiteBGlogo.png" alt="ConnectMe" id="footerLogo">
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="homePage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="jobPage.html">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="communityPage.html">Community</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>-->
+                </ul>
+            </div>
+
+        </div>
+
+        <hr id="mobileLine">
+
+        <p>2023 &#169; ConnectMe</p>
+        <p style="font-size: 20px; margin: 10px;"><b> | </b></p><a id="privacyPolicy" href="privacy.html">Privacy
+            policy</a>
+        <a href="#" class="fa fa-facebook"></a>
+
+    </footer>
+</body>
+
+</html>

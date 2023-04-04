@@ -1,0 +1,402 @@
+/*Links*/
+
+/*Mobile sizing*/
+@media screen and (max-width: 768px) {
+
+    /*Navigation*/
+    .nav-toggle {
+        display: block;
+        padding: 12px 16px;
+    }
+
+    .nav-links {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .nav-links li hr {
+        display: block;
+    }
+
+    .collapsable {
+        display: none;
+    }
+
+    .open {
+        display: block !important;
+        position: absolute;
+        margin-top: 90px;
+        background-color: #f5f5f5;
+        color: #3AAFA9;
+        box-shadow: 0px 16px 14px 1px #4e4e4ea8;
+        width: 100%;
+    }
+
+    .open li {
+        float: none;
+        color: #252525;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .open li a {
+        display: block;
+        padding: 12px 16px;
+        width: inherit;
+        height: inherit;
+    }
+
+    .profileButton {
+        float: right;
+        margin-right: 80px;
+    }
+
+    .profileButton button {
+        margin-top: 25px;
+    }
+}
+
+/*Tablet sizing*/
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .nav-toggle {
+        display: block;
+        padding: 12px 16px;
+    }
+
+    .nav-links {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .nav-links li hr {
+        display: block;
+    }
+
+    .collapsable {
+        display: none;
+    }
+
+    .open {
+        display: block !important;
+        position: absolute;
+        margin-top: 90px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 16px 14px 1px #4e4e4ea8;
+        width: 100%;
+    }
+
+    .open li {
+        float: none;
+        color: #252525;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .open li a {
+        display: block;
+        padding: 12px 16px;
+        width: inherit;
+        height: inherit;
+    }
+
+    .profileButton {
+        float: right;
+        margin-right: 80px;
+    }
+
+    .profileButton button {
+        margin-top: 25px;
+    }
+}
+
+/*Laptop sizing*/
+@media screen and (min-width: 1025px) and (max-width: 1401px) {
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        margin: 5px 50px 10px 0;
+        position: relative;
+    }
+
+    .nav-links li {
+        padding: 20px;
+        display: inline-block;
+    }
+
+    .nav-links li hr {
+        display: none;
+    }
+
+    .collapsable {
+        display: inline;
+        width: 100%;
+    }
+
+    #mobileLine {
+        display: none;
+    }
+
+}
+
+/*Desktop sizing*/
+@media screen and (min-width: 1401px) {
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-links li {
+        padding: 20px;
+        display: inline-block;
+    }
+
+    .nav-links {
+        margin: 5px 50px 10px 0;
+        position: relative;
+    }
+
+    .nav-links li hr {
+        display: none;
+    }
+
+    .collapsable {
+        display: inline;
+    }
+
+    #mobileLine {
+        display: none;
+    }
+}
+
+/*All sizes*/
+
+/*Whole*/
+html {}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/*Navigation*/
+
+.navigation {
+    background-color: #f5f5f5;
+    min-width: 100%;
+    margin-top: 0;
+    position: fixed;
+    z-index: 1;
+    height: 90px;
+    box-shadow: 0 0 20px 10px #17252a79;
+}
+
+#navigationLogo {
+    height: 50px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-collapsable {
+    width: 100%;
+    position: absolute;
+    float: right;
+    z-index: 0;
+}
+
+.nav-links {
+    float: right;
+    font-size: 16px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li hr {
+    width: 90%;
+    border: 0.5px solid #3AAFA9;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #3AAFA9;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    float: right;
+    z-index: 1;
+    position: relative;
+    border: none;
+    height: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.profileButton button {
+    /*background-color: #3AAFA9;*/
+    background-image: url('../Assets/Images/user.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px;
+    border-style: solid;
+    border-color: #3aafa998;
+    padding: 20px 20px;
+    color: #f5f5f5;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+}
+
+.topLine,
+.midLine,
+.bottomLine {
+    width: 35px;
+    height: 5px;
+    background-color: #3AAFA9;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 0;
+    position: relative;
+    border-radius: 30px;
+}
+
+.rightCross {
+    transform: translate(0, 11px) rotate(-45deg) !important;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.leftCross {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.pageContent {
+    padding-top: 90px;
+}
+
+#mobileLine {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+/*Sections*/
+
+.homePageHeader {
+    background-image: url("home_bg_desktop-1024x576.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 100px 50% 30px 5%;
+}
+
+.homePageHeaderWithoutText {
+    background-image: url("home_bg_desktop-1024x576.jpg");
+    background-size: 100px 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 100px 50% 30px 5%;
+}
+
+.whiteSection {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 100px 5% 30px 5%;
+    color: #252525;
+}
+
+#button {
+    background-color: #3AAFA9;
+    padding: 12px 16px;
+    border: 0px;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #3AAFA9;
+    bottom: 0;
+    padding: 30px 5% 30px 5%;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.footer-links li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+#footerLogo {
+    height: 50px;
+}
+
+footer p,
+#privacyPolicy {
+    display: inline-block;
+    font-size: 14px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+footer .fa {
+    padding-top: 10px;
+    padding-bottom: -5px;
+    font-size: 30px !important;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    float: right;
+}
+
+.fa-facebook {
+    background: #f5f5f5;
+    color: #3AAFA9;
+}
+
+.footerFlexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
