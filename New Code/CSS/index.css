@@ -400,3 +400,9 @@ footer .fa {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.searchBar {
+    position: absolute; 
+    margin-left: 285px; 
+    margin-top: 35px; 
+}
