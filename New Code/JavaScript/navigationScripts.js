@@ -20,8 +20,30 @@ function startUp() {
 
 function navFunction() {
 
-    $('.collapsable').toggleClass('open');
-    $('.topLine').toggleClass('rightCross');
-    $('.midLine').toggleClass('hidden');
-    $('.bottomLine').toggleClass('leftCross');
+    if ($('.collapsableTwo').hasClass('open')) {    
+        $('.collapsable').toggleClass('open');
+        $('.collapsableTwo').removeClass('open');
+        $('.topLine').toggleClass('rightCross');
+        $('.midLine').toggleClass('hidden');
+        $('.bottomLine').toggleClass('leftCross');
+    }
+    else {
+        $('.collapsable').toggleClass('open');
+        $('.topLine').toggleClass('rightCross');
+        $('.midLine').toggleClass('hidden');
+        $('.bottomLine').toggleClass('leftCross');
+    }
+}
+
+function profileFunction() {
+    if ($('.collapsable').hasClass('open')) {    
+        $('.collapsableTwo').toggleClass('open');
+        $('.collapsable').removeClass('open');
+        $('.topLine').toggleClass('rightCross');
+        $('.midLine').toggleClass('hidden');
+        $('.bottomLine').toggleClass('leftCross');
+    }
+    else {
+        $('.collapsableTwo').toggleClass('open');
+    }
 }

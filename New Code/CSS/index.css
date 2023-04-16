@@ -154,6 +154,28 @@
         display: none;
     }
 
+    .open {
+        display: block !important;
+        position: absolute;
+        background-color: #f5f5f5;
+        box-shadow: 0px 16px 14px 1px #4e4e4ea8;
+        width: 100%;
+    }
+
+    .open li {
+        float: none;
+        color: #252525;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .open li a {
+        display: block;
+        width: inherit;
+        height: inherit;
+    }
+
 }
 
 /*Desktop sizing*/
@@ -183,6 +205,28 @@
 
     #mobileLine {
         display: none;
+    }
+
+    .open {
+        display: block !important;
+        position: absolute;
+        background-color: #f5f5f5;
+        box-shadow: 0px 16px 14px 1px #4e4e4ea8;
+        width: 100%;
+    }
+
+    .open li {
+        float: none;
+        color: #252525;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .open li a {
+        display: block;
+        width: inherit;
+        height: inherit;
     }
 }
 
@@ -405,4 +449,22 @@ footer .fa {
     position: absolute; 
     margin-left: 285px; 
     margin-top: 35px; 
+}
+
+.collapsableTwo{
+    display: none;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+}
+
+
+.collapsableTwo li hr {
+    width: 90%;
+    border: 0.5px solid #3AAFA9;
+    display: block !important;
+}
+
+.collapsableTwo li {
+    padding: 10px !important;
 }

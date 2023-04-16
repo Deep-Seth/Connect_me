@@ -50,10 +50,35 @@
                     </li>-->
                 </div>
                 <li class="profileButton">
-                    <button></button>
+                    <button class="profileDropDown" aria-hidden="true" aria-label="menu" onclick="profileFunction(); return false"></button>
                 </li>
+                <div class="collapsableTwo">
+                        <li><a href="">Profile</a>
+                        <hr></li>
+                        <li><a href="">b</a>
+                        <hr></li>
+                        <!--Change text content to logout when signed in-->
+                        <li><button id="signUp">Sign in/ Sign up</button></li>
+                </div>
             </ul>
         </nav>
+<div class="loginForm">
+    <form action="">
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter Email..." required>
+
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Password..." required>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div id="exitForgot">
+        <button id="cancel">Cancel</button>
+        <p>Forgot <a>Password?</a></p>
+    </div>
+</div>
 
     </div>
     <div class="pageContent">
