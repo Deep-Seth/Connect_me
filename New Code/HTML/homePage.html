@@ -35,7 +35,7 @@
                         <hr>
                     </li>
                     <li>
-                        <a href="jobPage.html">Jobs</a>
+                        <a href="jobDashboard.html">Jobs</a>
                         <hr>
                     </li>
                     <li>
@@ -50,10 +50,12 @@
                         <a href="contact.html">Contact</a>
                     </li>-->
                 </div>
+
                 <li class="profileButton">
                     <button class="profileDropDown" aria-hidden="true" aria-label="menu"
                         onclick="profileFunction(); return false"></button>
                 </li>
+
                 <div class="collapsableTwo">
                     <li><a href="">Profile</a>
                         <hr>
@@ -64,14 +66,18 @@
                     <!--Change text content to logout when signed in-->
                     <li><button id="signUp" onclick="loginSignupForm()">Sign in/ Sign up</button></li>
                 </div>
+
             </ul>
         </nav>
+
         <div class="loginSignupForm">
             <div class="formContent">
+
                 <div class="tabIndicators">
                     <button class="login" value="login" onclick="activeTab(this.value)">Login</button>
                     <button class="signup" value="signup" onclick="activeTab(this.value)">Sign up</button>
                 </div>
+
                 <div class="loginForm">
                     <form action="" method="post">
                         <h1>Login</h1>
@@ -89,9 +95,11 @@
 
                 <div class="signupForm">
                     <form action="" method="post">
+                        
                         <h1>Sign up</h1>
 
-                        <div style="width: 100%; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;">
+                        <div
+                            style="width: 100%; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;">
                             <div style="width: 47%;">
                                 <label for="fName" id="fName" style="margin: 5px;">First Name</label>
                                 <input type="text" name="fName" style="width: 100%;" required>
@@ -127,11 +135,13 @@
                         <button id="button">Sign Up</button>
                     </form>
                 </div>
+
                 <div id="closeForm">
                     <button onclick="loginSignupForm()"></button>
                 </div>
             </div>
         </div>
+
         <div class="pageContent">
             <div style="height: 88vh;">
                 <h1>Let us help you find your best matches</h1>
@@ -150,7 +160,7 @@
                             <a href="homePage.html">Home</a>
                         </li>
                         <li>
-                            <a href="jobPage.html">Jobs</a>
+                            <a href="jobDashboard.html">Jobs</a>
                         </li>
                         <li>
                             <a href="communityPage.html">Community</a>
@@ -164,7 +174,6 @@
                     </li>-->
                     </ul>
                 </div>
-
             </div>
 
             <hr id="mobileLine">

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        ConnectMe
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../JavaScript/navigationScripts.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="homePage.html"><img src="../Assets/Images/logo.png" alt="ConnectMe" id="navigationLogo"></a>
+        <div class="searchBar"><input type="search" placeholder="Search..." id="searchBar"
+                style="font-size: 14px;"><button>S</button></div>
+        <button class="nav-toggle" aria-hidden="true" aria-label="menu" onclick="navFunction(); return false">
+            <div class="topLine"></div>
+            <div class="midLine"></div>
+            <div class="bottomLine"></div>
+        </button>
+        <nav class="nav" aria-hidden="true" style="transition: max-height 284ms ease 0s;">
+            <ul class="nav-links">
+                <div class="collapsable">
+                    <li>
+                        <a href="homePage.html">Home</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="jobDashboard.html">Jobs</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="communityPage.html">Community</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="blog.html">Blog</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>-->
+                </div>
+                
+                <li class="profileButton">
+                    <button class="profileDropDown" aria-hidden="true" aria-label="menu"
+                        onclick="profileFunction(); return false"></button>
+                </li>
+
+                <div class="collapsableTwo">
+                    <li><a href="">Profile</a>
+                        <hr>
+                    </li>
+                    <li><a href="">b</a>
+                        <hr>
+                    </li>
+                    <!--Change text content to logout when signed in-->
+                    <li><button id="signUp" onclick="loginSignupForm()">Sign in/ Sign up</button></li>
+                </div>
+
+            </ul>
+        </nav>
+
+        <div class="loginSignupForm">
+            <div class="formContent">
+
+                <div class="tabIndicators">
+                    <button class="login" value="login" onclick="activeTab(this.value)">Login</button>
+                    <button class="signup" value="signup" onclick="activeTab(this.value)">Sign up</button>
+                </div>
+
+                <div class="loginForm">
+                    <form action="" method="post">
+                        <h1>Login</h1>
+
+                        <label for="loginEmail" id="loginEmail">Email</label>
+                        <input type="email" name="loginEmail" required>
+
+                        <label for="loginPassword" id="loginPassword">Password</label>
+                        <input type="password" name="loginPassword" required>
+
+                        <a href="" style="padding: 10px 0;">Forgot Password</a>
+                        <button id="button">Login</button>
+                    </form>
+                </div>
+
+                <div class="signupForm">
+                    <form action="" method="post">
+                        
+                        <h1>Sign up</h1>
+
+                        <div
+                            style="width: 100%; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;">
+                            <div style="width: 47%;">
+                                <label for="fName" id="fName" style="margin: 5px;">First Name</label>
+                                <input type="text" name="fName" style="width: 100%;" required>
+                            </div>
+                            <div style="width: 47%;">
+                                <label for="lName" id="lName" style="margin: 5px;">Last Name</label>
+                                <input type="text" name="lName" style="width: 100%;" required>
+                            </div>
+                        </div>
+
+                        <label for="signupEmail" id="signupEmail">Email</label>
+                        <input type="email" name="signupEmail" required>
+
+                        <!--
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" required>
+                -->
+
+                        <label for="signupPassword" id="signupPassword">Password</label>
+                        <input type="password" name="signupPassword" class="inputPW" required>
+
+                        <div style="width: 100%; margin-bottom: 10px;">
+                            <input type="checkbox" value="inputPW" onclick="showPassword(this.value)">Show Password
+                        </div>
+
+                        <label for="pwordChecker" id="pwordChecker">Confirm Password</label>
+                        <input type="password" name="pwordChecker" class="confirmPW" required>
+
+                        <div style="width: 100%; margin-bottom: 10px;">
+                            <input type="checkbox" value="confirmPW" onclick="showPassword(this.value)">Show Password
+                        </div>
+
+                        <button id="button">Sign Up</button>
+                    </form>
+                </div>
+
+                <div id="closeForm">
+                    <button onclick="loginSignupForm()"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageContent">
+            <div style="height: 88vh;">
+                <h1>Course Dashboard</h1>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerFlexbox">
+                <div>
+                    <img src="../Assets/Images/whiteBGlogo.png" alt="ConnectMe" id="footerLogo">
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="homePage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="jobDashboard.html">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="communityPage.html">Community</a>
+                        </li>
+                        <!--
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <hr id="mobileLine">
+
+            <p>2023 &#169; ConnectMe</p>
+            <p style="font-size: 20px; margin: 10px;"><b> | </b></p><a id="privacyPolicy" href="privacy.html">Privacy
+                policy</a>
+            <a href="#" class="fa fa-facebook"></a>
+
+        </footer>
+</body>
+
+</html>
