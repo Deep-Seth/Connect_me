@@ -47,3 +47,36 @@ function profileFunction() {
         $('.collapsableTwo').toggleClass('open');
     }
 }
+
+function loginSignupForm() {
+    $('.loginSignupForm').toggleClass('show');
+    if(!$('.loginForm').hasClass('show')){
+        $('.loginForm').addClass('show');
+        $('.signup').addClass('inactive');
+        $('.signupForm').removeClass('show');
+        $('.login').removeClass('inactive');
+    }
+}
+
+function activeTab(a) {
+    if(a=="login"){
+        if(!$('.loginForm').hasClass('show')){
+            $('.signupForm').removeClass('show');
+            $('.loginForm').addClass('show');
+            $('.signup').addClass('inactive');
+            $('.login').removeClass('inactive');
+        }
+    }
+    if(a=="signup"){
+        if(!$('.signupForm').hasClass('show')){
+            $('.loginForm').removeClass('show');
+            $('.signupForm').addClass('show');
+            $('.login').addClass('inactive');
+            $('.signup').removeClass('inactive');
+        }
+    }
+}
+
+function showPassword(b) {
+    console.log(b + " has been selected");
+}
