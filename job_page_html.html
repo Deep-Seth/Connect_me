@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+<title>Connect Me</title>
+<link rel="icon" type="image/x-icon" href="C:\Users\dhana\Connect_me\images\favicon.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+   
+  </head>
+<body style="overflow-y: scroll">
+  <h2 style="text-align: center;">Create Your Listing</h2><br><br>
+  <div id = "job_creation_form" class="form-group">
+  <form>
+    <label for="Company Name">Company Name : </label>
+    <input type ="text" id="company_Name" name="companyName"><br><br>
+    <label for="Job Title">Job Title : </label>
+    <input type ="text" id="job_Title" name="jobTitle"><br><br>
+    <label for="Job Description">Job Description : </label><br>
+    <textarea rows="5" cols="40" id="job_Description" name="job_Description"></textarea><br><br>
+    <label for="Job Type">Job Type : </label><br>
+    <input type ="checkbox" id="job_Type" name="job_Type" value="Full-Time">Full-Time<br><br>
+    <input type ="checkbox" id="job_Type" name="job_Type" value="Part-Time">Part-Time<br><br>
+    <input type ="checkbox" id="job_Type" name="job_Type" value="Casual">Casual<br><br>
+    <input type ="checkbox" id="job_Type" name="job_Type" value="Internship">Intenship<br><br>
+    <table style="border-color: black;border-width: 5px;">
+        <tr><th>Skills</th></tr>
+        <tr>
+            <td>Primary Skill</td>
+            <td>
+             <select name="primay_Skill" id="skills" required >
+               <option value ="">Skill1</option>
+               <option value ="">Skill2</option>
+               <option value ="">Skill3</option>             
+             </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Secondary Skill</td>
+            <td>
+             <select name="secondary_Skill" id="skills" required>
+               <option value ="">Skill1</option>
+               <option value ="">Skill2</option>
+               <option value ="">Skill3</option>             
+             </select>
+            </td>
+        </tr>
+        <tr>            
+            <td>Other Skill</td>
+            <td>
+             <select name="other_Skill" id="skills">
+               <option value ="">Skill1</option>
+               <option value ="">Skill2</option>
+               <option value ="">Skill3</option>             
+             </select>
+            </td>
+        </tr>
+    </table>
+    <span><input type="checkbox" id="agreement" name="terms_agreement"> Read and check the <a href="">aggrement attached</a>     </span>
+    <br><br>
+    <input type="submit">
+  </form>
+ </div>
+ <div class="col-1">
+   <table class="table-active">
+    <tr><th>Your Listings</th></tr>
+    <tr><td>Job id</td><td><td></tr>
+   </table>
+ </div>
+</body>
+</html>
