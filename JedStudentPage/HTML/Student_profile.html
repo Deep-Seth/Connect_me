@@ -153,33 +153,28 @@
     <div class="pageContent">
         <h2 style="margin: 20px">Student info</h2>
     
-        <h4>Your Skills</h4>
+        <div class="card">
+            <div class="card-header">
+                <h3>Add your units</h3>
+            </div>
+            <div class="card-body">
+                <form action="unit.php" method="post">
+                    <!-- <label for="fName">First Name</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                      -->
+                    <label for="unit_search">Unit Search:</label><br>
+                    <input type="text" id="searchBox" name="search" placeholder="search..."><br>
+                    <input type="submit" value="search">
+                </form>
+            </div>
+        </div><br><br>
+        <div class="card">
+            <div class="card-header">
+                <h1>Your Achieved Skills</h1>
+                <div class="card-body">
     
-        <table style="border-collapse:collapse">
-            <tr>
-                <th>Skill</th>
-                <th>level</th>
-                <th>Date</th>
-            </tr>
-            <tr class="c0">
-                <td>Skilled1</td>
-                <td>level</td>
-                <td>Time</td>
-                <td class="hider"></td>
-            </tr>
-            <tr class="c1">
-                <td>Skille2d</td>
-                <td>level</td>
-                <td>Time</td>
-                <td class="hider"></td>
-            </tr>
-            <tr class="c2">
-                <td>Skill3ed</td>
-                <td>level</td>
-                <td>Time</td>
-                <td class="hider"></td>
-            </tr>
-        </table>
         <button id = "manager" onclick="mngOpen()" style="margin: 10px;margin-bottom: 30px;">Manage skills</button>
         <div>
             <span onclick="unitOpen()" style="background-color: teal;">Complete a unit box/button?</span>
